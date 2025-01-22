@@ -42,7 +42,7 @@ const NumberGuessingGame = () => {
       </h2>
       <GuessControl onGuess={handleGuess} />
       {isGameOver && (
-        <GameOver hasWon={isCorrectGuess} onReset={handleReset} />
+        <GameOver hasWon={isCorrectGuess} onReset={handleReset} numberToGuess={numberToGuess} />
       )}
       {!isGameOver && (
         <GuessMessage
